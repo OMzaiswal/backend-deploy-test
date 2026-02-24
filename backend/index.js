@@ -18,9 +18,9 @@ app.use('/api/auth', authRoutes);
 // app.use('/api/transactions', transactionRoutes);
 app.use('/api/stocks', stockRoutes);
 
-// app.get('/', (req, res) => {
-//     res.send('Hello world');
-// })
+app.get('/', (req, res) => {
+    res.send('Hello world');
+})
 
 app.listen(PORT, () => {
     console.log(`App is listening on PORT: ${ PORT }`);
